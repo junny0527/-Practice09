@@ -15,7 +15,7 @@ public class GoodsApp {
 
 		while (value) {
 			input = sc.nextLine().split(",");
-			if (input[0].equals("q")) {
+			if ("q".equals(input[0])) {
 				break;
 			}
 			goods.add(new Goods(input[0], Integer.parseInt(input[1]), Integer.parseInt(input[2])));
